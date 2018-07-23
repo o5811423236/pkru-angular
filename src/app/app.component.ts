@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Myapp Angular ';
+  version:Number =1.0;
+  disabled:Boolean = true;
+  changeTitle(event){
+    console.log(event.target.value);
+    this.title = event.target.value;
+    //this.title = event.key;
+  }
 }
